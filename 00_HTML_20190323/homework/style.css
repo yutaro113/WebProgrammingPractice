@@ -1,0 +1,338 @@
+/****************************** General ******************************/
+.wrapper{
+    max-width:1366px;
+    margin: 0 auto;
+    text-align: center;
+    font-size:16px;
+}
+#page_top{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #ef3f98;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: FontAwesome;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  #page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+/****************************** Header Section ******************************/
+header{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+}
+#headerimage{
+    width: 450px;
+    height:100px;
+}
+#nav {
+  list-style: none;
+  overflow: hidden;
+}
+#nav li {
+  margin: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  background-color:white;
+}
+ #nav li a {
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  font-size: 21px;
+}
+/****************************** Main Section ******************************/
+.main{
+    position: relative;
+}
+.maintext{
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 30%;
+    margin: 0;
+    text-align: center;
+}
+.main img{
+    width: 1366px;
+}
+#maintext1{
+    font-size: 36px;
+    font-weight: bold;
+}
+#maintext2{
+    font-size: 24px;
+}
+
+/****************************** ABOUT Section ******************************/
+.about{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color:#ffd61a;
+}
+#abouttext1{
+    margin-bottom: 60px;
+}
+#abouttext2{
+    margin-bottom: 40px;
+}
+#abouttext3{
+    margin-bottom: 80px;
+}
+#about {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center; 
+    justify-content: center;
+  }
+
+/****************************** COURSE Section ******************************/
+.course{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.coursebox{
+    display:flex;
+    height:480px;
+    background-color: #fafafa;
+}
+.coursetextbox{
+    width: 50%;
+}
+.courseimg{
+    width: 50%;
+}
+.coursetextleft{
+    width: 430px;
+    text-align: left;
+    margin-left:50px;
+    margin-top:120px;
+}
+.coursetextright{
+    width: 430px;
+    text-align: left;
+    margin-right:50px;
+    margin-top:120px;
+    justify-content: right;
+    float: right;
+}
+.coursetexttitle{
+    margin-bottom:40px;
+}
+#coursetext1{
+    margin-bottom: 60px;
+}
+
+/****************************** NEWS Section ******************************/
+.news{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color:#ffd61a;
+}
+.newstext1{
+    margin-bottom: 60px;
+}
+.newstext2{
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+.newsarticle{
+    width:300px;
+    margin-left:15px;
+    margin-right:15px;
+    text-align:left;
+}
+.newsarticle:hover{
+    cursor: pointer;
+}
+#newsbox{
+    display:flex;
+    justify-content: center;    
+}
+.more {
+    margin-top: 60px;
+/*    position: relative;*/
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background:#ffd61a;
+    transition: .4s;
+    border-style: none;
+    cursor: pointer;
+  }
+.more:hover {
+    background: #ffd61a;
+    color: white;
+    border-style: none;
+  }
+
+/****************************** ACCESS Section ******************************/
+.accessbox{
+    margin-top:60px;
+    background-color: #fafafa;
+    position: static;
+    height: 1060px;
+}
+.access{
+    position: relative;
+    top: 60px;
+}
+.accesstext1{
+    position: relative;
+    top: 60px;
+}
+.accessmap{
+    position: relative;
+    top:120px;
+    width:100%;
+    height:450px;
+}
+.accesstable{
+    position: relative;
+    top:120px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.tableid{
+    width:150px;
+    height:50px;
+    margin-bottom:30px;
+}
+/****************************** CONTACT Section ******************************/
+.contact{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.contacttext1{
+    margin-bottom: 60px;
+}
+.contacttext2{
+    margin-bottom: 30px;
+}
+.contacttable{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    text-align: left;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+.contacttableid{
+    width:220px;
+    height:36px;
+    padding-left:16px;
+/*    text-indent:16px;*/
+    border: thin #bfbfbf solid;
+    border-left-style: none;
+}
+.contactformbox{
+    width:450px;
+    height:52px; 
+    border: thin #bfbfbf solid;
+    border-right-style: none;
+}
+.contactformbox2{
+    width:450px;
+    height:150px; 
+    border: thin #bfbfbf solid;
+    border-right-style: none;
+}
+.contactform{
+    width:328px;
+    height:36px;
+    margin-left:8px;
+    border: thin #bfbfbf solid;
+}
+.contactform2{
+    width:328px;
+    height:134px;
+    margin-left:8px;
+    border: thin #bfbfbf solid;
+}
+.checkbox{
+    width:24px;
+    height:24px;
+    margin:24px 24px 24px 8px;
+    border: thin #bfbfbf solid;
+    align-content: center;
+    position: static;
+}
+.checkboxtext{
+    position: relative;
+    top: -5px;
+    margin-left: 20px;  
+}
+.submitbutton {
+/*    margin-top: 30px;*/
+    margin-bottom: 140px;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: #ffd61a;
+    transition: .4s;
+    border-style: none;
+}
+.submitbutton:hover {
+    cursor: pointer;
+    background: #ffd61a;
+    color: white;
+    border-style: none;
+}
+/****************************** Footer Section ******************************/
+.footer {
+    background: #707070;
+    width: 100%;
+  }
+#footertext {
+    color: white;
+    line-height: 76px;
+  }
