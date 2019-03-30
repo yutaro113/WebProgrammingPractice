@@ -21,3 +21,9 @@ if (score >= 80){
 }else {
     console.log("SCORE:%d もっと頑張りましょう!",score)
 } 
+
+$(document).ready(function(){
+    $("#a").on('click', function(){ //「イベント」を制御
+        $("#a").html("jquery") 　　　//「セレクタ」に対して「メソッド」を実行する
+    })
+});
