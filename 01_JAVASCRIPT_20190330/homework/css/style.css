@@ -1,0 +1,111 @@
+.wrapper{
+    text-align : center;
+    max-width  : 1600px;
+    height     : 800px;
+    background : black;
+    margin     : 0 auto;
+    display    : flex;
+    flex-direction: column;
+    align-items: center;    
+}
+#background{
+    width      : 100%;
+    height     : 100%;
+    opacity    : 0.2;
+}
+.saikoromenu{
+    position   :absolute;
+    top        : 50%;
+    left       : 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    color      :white;
+    font-family:'Amatic SC', cursive;
+    font-size  : 50px;
+    cursor     : pointer;
+}
+.saikoroapp{
+    display    :none;
+}
+.saikoro{
+    position   : absolute;
+    max-width  : 1600px;
+    height     : 800px;
+    top        : 70%;   
+    left       : 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.saikororesult{
+    position   : absolute;
+    max-width  : 1600px;
+    height     : 800px;
+    top        : 95%;   
+    left       : 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    display    : flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img{
+    margin-top : 50px;
+    position   : relative;
+}
+#img.bound {
+    animation: bound 1s ease-out 1;
+}
+@keyframes bound{
+    0% {top: 0;}
+    15% {top: -200px;}
+    35% {top: 0;}
+    55% {top: -120px;}
+    70% {top: 0;}
+    85% {top: -60px;}
+    100% {top: 0;}
+}
+#button{
+    margin-top : 50px;
+    font-size  : 20px;  
+    font-weight: bold;
+    width      : 250px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: orange;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px darkorange;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+#button:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+p{
+    width      : 1000px;
+    text-align : center;
+    color      :white;
+    font-weight: bold;
+    font-size  : 30px;
+    font-family: 'Tsukushi A Round Gothic','筑紫A丸ゴシック'; 
+}
+p.emphasize{
+    animation: emphasize 1s ease-out 1;
+}
+@keyframes emphasize{
+    0% {font-size: 0;}
+    10% {font-size: 5px;}
+    20% {font-size: 10px;}
+    30% {font-size: 15px;}
+    40% {font-size: 20px;}
+    50% {font-size: 25px;}
+    60% {font-size: 30px;}
+    70% {font-size: 35px;}
+    80% {font-size: 40px;}
+    90% {font-size: 45px;}
+   100% {font-size: 50px;}
+}
